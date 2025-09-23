@@ -1,0 +1,90 @@
+/* Menu principal horizontal */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #00159f;
+    display: flex;          /* itens lado a lado */
+}
+
+li {
+    position: relative;     /* necessário para o submenu */
+}
+
+a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #22005c;
+}
+
+/* Submenu escondido */
+.sub {
+    display: none;
+    position: absolute;
+    top: 100%;             /* aparece abaixo do item pai */
+    left: 0;
+    background-color: #0b0050;
+    min-width: 150px;
+}
+
+.linksub {
+    padding: 10px;
+}
+
+/* Mostrar submenu no hover */
+li:hover > ul {
+    display: block;
+}
+
+body{
+    background-color: cornflowerblue;
+    
+}
+
+
+h1{
+    background-color: blue;
+    font-family: fantasy;
+    border: 5px solid red;
+    height: 50px;
+    width: 500px;
+    margin-left: 500px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+
+main{
+    
+    background-color: rgb(137, 188, 255);
+    border-radius: 20px;
+    
+}
+
+img{
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+}
+
+p {
+    padding: 10px;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 20px;
+
+}
