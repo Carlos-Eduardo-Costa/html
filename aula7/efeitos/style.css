@@ -1,0 +1,42 @@
+button{
+    background-color: blue;
+    color: white;
+    transition: background 1s ease;
+    border-radius:20px ;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 450px;
+    height: 450px;
+    font-size: 20px; 
+      
+
+}   
+button:hover{
+    background-color: rgb(255, 0, 0);
+    transform: scale(1.2);
+}
+@keyframes piscar {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+div{
+    animation: piscar 2s infinite;
+    background-color: red;
+    width: 70px;
+    height: 50px;
+}
+img:hover{
+    transform: rotate( 999999deg);
+    transition: transform 180s ease;
+    width: 500px;
+    height: 500px;
+}
+#linear-gradient {
+    background: linear-gradient(to right, red, yellow);
+}
+#radial-gradient {
+    background: radial-gradient(circle, blue, white);
+}
+
